@@ -1,0 +1,112 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Manage Products</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Vollkorn:700italic,400' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+      .add-product-btn {
+        font-family: 'Vollkorn', sans-serif;
+        display: inline-block;
+        background-color: #333;
+        color: #fff;
+        padding: 8px 15px;
+        border: none;
+        cursor: pointer;
+        text-decoration: none;
+        border-radius: 4px;
+      }
+    
+      .add-product-btn:hover {
+        background-color: #555;
+      }
+    </style>
+  </head>
+
+<body>
+    <header>
+        <br>
+        <a href="index.html" class="logo">
+            <i class="fas fa-camera-retro fa-fw"></i>
+            <em>Film</em><strong>Cameras</strong>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="manageproducts.html">Products</a></li>
+                <li><a href="manageorders.html">Orders</a></li>
+                <li><a href="manageusers.html">Users</a></li>
+                <li><a href="#">LOGOUT</a></li>
+            </ul>
+        </nav>
+    </header>   
+    <section class="tablebg">
+        <h1 class="prodh1"">Manage Products</h1>
+        <a href="#" class="add-product-btn"><i class="fa fa-plus-circle" aria-hidden="true"></i> Add Product</a>
+        <div class="table-search">
+        <input type="text" id="searchInput" placeholder="Search...">
+        </div>
+        <div class="limiter">
+            <div class="container-table100">
+            <div class="table100">
+            <table>
+            <thead>
+            <tr class="table100-head">
+            <th class="column1">ID</th>
+            <th class="column2">Product Name</th>
+            <th class="column3">Price</th>
+            <th class="column4">Stocks</th>
+            <th class="column5">Description</th>
+            <th class="column6">Actions</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td class="column1">1</td>
+            <td class="column2">OLYMPUS PEN EED [35mm PNS]</td>
+            <td class="column3">Php 5,499</td>
+            <td class="column4">20</td>
+            <td class="column5">Clean lens, ...</td>
+            <td class="column6">
+              <button>Edit</button>
+              <button>Delete</button>
+            </td>
+            </tr>
+            <tr>
+              <td class="column1">1</td>
+              <td class="column2">YASHICA ELECTRO 35 [35mm rangefinder]</td>
+              <td class="column3">Php 5,499</td>
+              <td class="column4">20</td>
+              <td class="column5">Clean lens, ...</td>
+              <td class="column6">
+                <button>Edit</button>
+                <button>Delete</button>
+              </td>
+            </tr>
+            </tbody>
+            </table>
+            </div>
+            </div>
+            </div>
+    </section>
+
+    <script>
+       document.getElementById("searchInput").addEventListener("input", function() {
+    let filter = this.value.toLowerCase();
+    let rows = document.querySelectorAll(".table100 tbody tr");
+
+    rows.forEach(row => {
+        let text = row.textContent.toLowerCase();
+        if (text.includes(filter)) {
+            row.style.display = "";
+        } else {
+            row.style.display = "none";
+        }
+    });
+    });
+    </script>
+</body>
+</html>

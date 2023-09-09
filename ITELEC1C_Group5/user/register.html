@@ -1,0 +1,108 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Vollkorn:700italic,400' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+<style>
+
+  .txt_field label {
+    font-family: sans-serif;
+  }
+  .center {
+    font-family: sans-serif;
+    color: black;
+  }
+
+  .name_fields {
+  display: flex;
+  gap: 10px; 
+  margin-bottom: -25px;
+  margin-top: -25px;
+}
+.name_fields .txt_field {
+  flex: 1;
+}
+</style>
+
+</head>
+
+<body>
+    <header>
+        <br>
+        <a href="index.html" class="logo">
+            <i class="fas fa-camera-retro fa-fw"></i>
+            <em>Film</em><strong>Cameras</strong>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="products.html">Cameras</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="cart.html"><i class="fas fa-shopping-cart fa-fw"></i></a></li>
+                <li><a href="#"><i class="fas fa-heart fa-fw"></i></a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div class="center">
+            <h1>SIGNUP</h1>
+            <form action="registerprompt.html" method="get">
+              <div class="name_fields">
+                <div class="txt_field">
+                  <input type="text" required>
+                  <span></span>
+                  <label>Last Name</label>
+                </div>
+                <div class="txt_field">
+                  <input type="text" required>
+                  <span></span>
+                  <label>First Name</label>
+                </div>
+              </div>
+              <div class="txt_field">
+                <input type="text" required>
+                <span></span>
+                <label>Username</label>
+              </div>
+              <div class="name_fields">
+              <div class="txt_field">
+                <input type="password" required>
+                <span></span>
+                <label>Password</label>
+              </div>
+              <div class="txt_field">
+                <input type="password" required>
+                <span></span>
+                <label>Confirm Password</label>
+                </div>
+              </div>
+              <div class="txt_field">
+                <input type="text" required>
+                <span></span>
+                <label>Email</label>
+              </div>
+              <div class="txt_field">
+                <input type="text" required>
+                <span></span>
+                <label>Phone Number</label>
+              </div>
+              <div>
+                    <input type="submit" value="Register">
+              </div>
+              <div class="signup_link">
+                Already a member? <a href="login.html">Login here.</a>
+              </div>
+            </form>
+          </div>
+        </section>
+</body>
+</html>
+
+    

@@ -1,0 +1,82 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Vollkorn:700italic,400' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+<style>
+
+.txt_field label {
+    font-family: sans-serif;
+  }
+.center {
+    font-family: sans-serif;
+    color: black;
+  }
+
+.name_fields {
+  display: flex;
+  gap: 10px; 
+  margin-bottom: -25px;
+  margin-top: -25px;
+}
+.name_fields .txt_field {
+  flex: 1;
+}
+img {
+  max-width: 20%;
+  height: auto;
+  padding-top: 30px; 
+  margin-bottom: -30px; 
+}
+.success-message
+{
+    padding-top: 10px; 
+    padding-top: 10px; 
+    padding-bottom: 20px;
+}
+</style>
+
+</head>
+
+<body>
+    <header>
+        <br>
+        <a href="index.html" class="logo">
+            <i class="fas fa-camera-retro fa-fw"></i>
+            <em>Film</em><strong>Cameras</strong>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="products.html">Cameras</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="cart.html"><i class="fas fa-shopping-cart fa-fw"></i></a></li>
+                <li><a href="cart.html"><i class="fas fa-heart fa-fw"></i></a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div class="center">
+            <img src="photos/login/check.png" alt="check icon">
+            <h1>Success!</h1>
+            <form method="post">
+                <label>Your account has been created</label>
+                <div id="success-message" class="success-message">
+                    Welcome to <em>Film</em><strong>Cameras</strong>.
+                </div>
+              <input type="submit" value="Continue">
+              <div class="signup_link">
+              </div>
+            </form>
+          </div>
+        </section>
+
+
+    
